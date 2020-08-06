@@ -1,61 +1,71 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script> 
-$(document).ready(function(){
-  $("button").click(function(){
-    var div = $("div");
-    div.animate({
-    	left: '200px',
-    	height: '300px',
-        width: '200px',
-        opacity: '0.4'
-        }, "slow");
-    div.animate({
-    	top: "100px",
-    	width: '300px', 
-        opacity: '0.8',
-        }, "slow");
-    div.animate({
-    	top: '0',
-    	height: '100px', 
-    	opacity: '0.4'
-        }, "slow");
-    div.animate({
-    	top: '200px',
-        left: '0',
-    	width: '100px', 
-    	opacity: '0.8'
-        }, "slow");
-  });
-});
-</script> 
-	<style>
-    	#animated{
-        	background: #98bf21;
-            height:100px;
-            width:100px;
-            position:absolute;
-            background-image: url("https://cdn.pixabay.com/photo/2017/11/22/16/04/pug-2970825_960_720.png"); /* The image used */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Do not repeat the image */
-            background-size: cover;
-        }
-        
-        
-   
+
+    <style>
+    
+      body {
+        background-color: black;
+      }
+
+      h1 {
+      	background-color: red;
+        color: black;
+        text-align: center;
+        opacity: 0.5;
+        font-size: 80px;
+        border-style: solid;
+        padding: 25px 25px 25px 25px;
+      }
+
+      p {
+        font-family: verdana;
+        font-size: 40px;
+      }
+      
+      img{
+      	display: block;
+        margin: 0 auto;
+        background-color: white;
+        padding: 25px 25px 25px 25px;
+      }
+      
+      
+      h2{
+      	font-size: 50px;
+        text-align: center;
+        color: white;
+        margin: 80px 0px 40px 0px;
+      }
+      
     </style>
+
 </head>
 
+
 <body>
-	
-    <button>Start Animation</button>
 
-    <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+  <h1>How To Play Basketball 101 !</h1>
 
-    <div id="animated"></div>
-    
+<img src="https://pixabay.com/photos/basketball-sport-ball-game-2258650/" height="442">
+
+
+
+<h2>Basketball Basic Needs </h2>
+
+<img src="https://pixabay.com/photos/basketball-hoop-basket-slam-dunk-768713/" alt="dab" height="442">
+
+
+
+<h2> Next Step: PRACTICE </h2>
+
+<img src="https://pixabay.com/images/id-635906/" alt="dab" height="442">
+
+
+
+<h2> Try Out For A Team! </h2>
+
+<img src="https://pixabay.com/photos/basketball-game-competition-sport-557192/" height="442">
+
 </body>
-
 </html>
