@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");
+    div.animate({
+    	left: '200px',
+    	height: '300px',
+        width: '200px',
+        opacity: '0.4'
+        }, "slow");
+    div.animate({
+    	top: "100px",
+    	width: '300px', 
+        opacity: '0.8',
+        }, "slow");
+    div.animate({
+    	top: '0',
+    	height: '100px', 
+    	opacity: '0.4'
+        }, "slow");
+    div.animate({
+    	top: '200px',
+        left: '0',
+    	width: '100px', 
+    	opacity: '0.8'
+        }, "slow");
+  });
+});
+</script> 
+	<style>
+    	#animated{
+        	background: #98bf21;
+            height:100px;
+            width:100px;
+            position:absolute;
+            background-image: url("https://cdn.pixabay.com/photo/2017/11/22/16/04/pug-2970825_960_720.png"); /* The image used */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
+        }
+        
+        
+   
+    </style>
+</head>
+
+<body>
+	
+    <button>Start Animation</button>
+
+    <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+    <div id="animated"></div>
+    
+</body>
+
+</html>
